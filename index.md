@@ -1,10 +1,9 @@
 ---
-title: '"Bienvenue !"'
+title: 'Bienvenue !'
 permalink: /
+layout: default
 ---
 # Bonjour, je suis Marc-Antoine Gourdeau
-
----
 
 Bienvenue sur mon site personnel. En voici un peu plus sur moi :
 
