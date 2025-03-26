@@ -1,1 +1,30 @@
-<p>curriculum works!</p>
+<div class="cv-container">
+    <section class="experiences">
+      <h2>Expérience</h2>
+      <div *ngFor="let exp of cv.experiences" class="experience">
+        <div class="experience-header">
+          <h3>{{ exp.poste }}</h3>
+          <p class="date">{{ exp.debut }} - {{ exp.fin }}</p>
+        </div>
+        <p class="entreprise">{{ exp.entreprise }}, {{ exp.lieu }}</p>
+        <ul>
+          <li *ngFor="let tache of exp.taches">{{ tache.description }} ;
+            <ul *ngIf="tache.sousTaches && tache.sousTaches.length > 0">
+              <li *ngFor="let sousTache of tache.sousTaches">{{ sousTache.description }} ;</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+  
+    <section class="competences">
+      <h2>Compétences</h2>
+      <div *ngFor="let competence of cv.competences;" class="competence">
+        <b>{{ competence.groupe }}</b>
+        <br>
+        <span *ngFor="let element of competence.elements; let isLast=last">
+            {{ element }}{{ isLast ? '' : ',' }}
+        </span>
+      </div>
+    </section>
+  </div>

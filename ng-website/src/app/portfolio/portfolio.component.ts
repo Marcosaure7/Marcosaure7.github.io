@@ -8,6 +8,7 @@ import {Title} from '@angular/platform-browser';
   styleUrl: './portfolio.component.css'
 })
 export class PortfolioComponent {
+
   constructor(private titleService: Title)
   {
     this.titleService.setTitle('Marc-Antoine Gourdeau - Portfolio');
