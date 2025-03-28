@@ -27,4 +27,15 @@
         </span>
       </div>
     </section>
+
+    <section class="experiences">
+      <h2>Études</h2>
+      <div *ngFor="let etu of cv.etudes" class="experience">
+        <div class="experience-header">
+          <h3>{{ etu.poste }}</h3>
+          <p class="date">{{ etu.debut }} - {{ etu.fin }}</p>
+        </div>
+        <p class="entreprise">{{ etu.entreprise }}, {{ etu.lieu }}</p>
+      </div>
+    </section>
   </div>
