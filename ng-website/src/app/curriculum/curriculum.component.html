@@ -39,4 +39,21 @@
       </div>
     </section>
 
+    <section class="experiences">
+      <h2>Engagements sociaux</h2>
+      <div *ngFor="let eng of cv.engagementsSociaux" class="experience">
+        <div class="experience-header">
+          <h3>{{ eng.poste }}</h3>
+          <p class="date">{{ eng.debut }} - {{ eng.fin }}</p>
+        </div>
+        <p class="entreprise">{{ eng.entreprise }}, {{ eng.lieu }}</p>
+      </div>
+    </section>
+
+    <section class="bourses">
+      <h2>Boures et distinctions</h2>
+      <p *ngFor="let bourse of cv.bourses" class="bourse">
+        {{ bourse }}
+      </p>
+    </section>
   </div>

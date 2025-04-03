@@ -9,6 +9,8 @@ import { Title } from '@angular/platform-browser';
 })
 export class HomeComponent {
 
+  profilePicturePath = "../../assets/pdp.jpg";
+
   constructor(private titleService: Title)
   {
     this.titleService.setTitle('Marc-Antoine Gourdeau - Home');
