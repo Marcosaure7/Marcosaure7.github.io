@@ -14,3 +14,14 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.tag {
+  padding: 0px 20px;
+  height: 30px;
+  width: fit-content;
+  font-size: 14px;
+  line-height: 30px;
+  border-radius: 25px;
+  background-color: blue;
+  color: white;
+}

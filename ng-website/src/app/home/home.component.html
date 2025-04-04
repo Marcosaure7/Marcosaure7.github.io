@@ -17,8 +17,18 @@
     </div>
 
     <div class="col-lg shadow border m-1">
+      <div class="text-center">
+        <h2>Projet à l'avant</h2>
+        <h4>{{featuredProject.name}}</h4>
+        <carousel>
+          <div *ngFor="let image of featuredProject.imagesSrc">
+              <slide><img [src]="image" [alt]="featuredProject.name" style="display: block; width: 100%;"></slide>
+          </div>
+      </carousel>
 
+      <p class="mt-2">{{featuredProject.summary}}</p>
+      <p>Visitez la section <a href="/portfolio" target="_parent">Portfolio</a> pour en apprendre plus !</p>
+      </div>
     </div>
-
   </div>
 </div>

@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start-bg": "nohup ng serve > logs/serve.log 2>&1 &",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build": "ng build",

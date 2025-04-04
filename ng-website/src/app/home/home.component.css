@@ -1,3 +1,7 @@
 .justified-text {
     text-align: justify;
 }
+
+h2 {
+    margin-top: 10px; /* Ajuste la valeur selon tes besoins */
+}

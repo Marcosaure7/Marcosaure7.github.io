@@ -1,6 +1,11 @@
+import { Tag } from "./tag.model";
+
 export interface Project {
+    id: number;
     name: string;
     link: string;
-    descripiton: string
-    imageSrc?: string;
+    descripiton: string;
+    summary: string;
+    imagesSrc?: string[];
+    tags: Tag[];
 }
