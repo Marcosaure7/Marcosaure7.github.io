@@ -1,18 +1,45 @@
 <nav class="navbar-expand-md border-bottom mb-3">
-  <div class="container">
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link text-secondary" routerLink="/home" routerLinkActive="text-dark">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-secondary" routerLink="/portfolio" routerLinkActive="text-dark">Portfolio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-secondary" routerLink="/curriculum" routerLinkActive="text-dark">Curriculum</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-secondary" routerLink="/contact" routerLinkActive="text-dark">Contact</a>
-      </li>
-    </ul>
+  <div class="container-fluid px-4">
+    <div class="row align-items-center">
+      
+      <!-- Colonne vide à gauche pour équilibrer la grille -->
+      <div class="col"></div>
+
+      <!-- Liens centrés -->
+      <div class="col-auto">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-secondary" routerLink="/home" routerLinkActive="text-dark">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" routerLink="/portfolio" routerLinkActive="text-dark">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" routerLink="/curriculum" routerLinkActive="text-dark">Curriculum</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Bloc de contacts sur une seule ligne à droite -->
+      <div class="col text-end">
+        <div class="contacts-container d-inline-flex align-items-center gap-3">
+          <p class="mb-0">
+            <a href="tel:+14182841118">📞</a>
+          </p>
+          <p class="mb-0">
+            <a href="mailto:marc-antoine.gourdeau.1@ulaval.ca">📧</a>
+          </p>
+          <div class="d-inline-flex gap-2">
+            <a href="https://www.facebook.com/marcantoine.gourdeau">
+              <img src="assets/facebook.png" alt="Facebook icon - Contact info" width="30" height="30" class="rounded-circle">
+            </a>
+            <a href="https://github.com/Marcosaure7">
+              <img src="assets/github.png" alt="GitHub icon - Contact info" width="30" height="30" class="rounded-circle">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </nav>

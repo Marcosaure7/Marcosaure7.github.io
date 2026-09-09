@@ -10,10 +10,11 @@
         </div>
     </carousel>
 
-    <h3 class="mt-2">Description</h3>
-    <p>{{project.descripiton}}</p>
-    <p>Retrouver sur Github : <a [href]="project.link" target="_blank">here</a></p>
-
+    <div *ngIf="project.descripiton || project.link" class="container">
+        <h3 class="mt-2">Description</h3>
+        <p>{{project.descripiton}}</p>
+        <p *ngIf="project.link">Retrouver sur Github : <a [href]="project.link" target="_blank">here</a></p>
+    </div>
 
     <hr>
     <div class="d-flex flex-wrap">

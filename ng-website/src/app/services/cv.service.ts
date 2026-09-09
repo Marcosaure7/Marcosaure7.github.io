@@ -19,14 +19,34 @@ export class CvService {
                 + "Je suis ensuite devenu annotateur de données IA, où mes talents en programmation fut à l’épreuve."
                 + "Mon parcours professionnel m’a ensuite amené chez Best Buy en tant qu’agent Geek Squad, où j’ai fait de"
                 + "la configuration d’ordinateurs et de la réparation d’appareils divers (téléphones, ordinateurs). Je suis"
-                + "présentement stagiaire, où la programmation et le travail d’équipe sont mon quotidien.",
+                + "présentement stagiaire, où la programmation et le travail d’équipe sont mon quotidien."
+                + "Aujourd'hui, j'ai remis les pieds chez Best Buy en rejoignant de nouveau l'équipe Geek Squad.",
       experiences: [
+        {
+          poste: 'Agent Geek Squad',
+          entreprise: 'Best Buy',
+          lieu: 'Laurier Québec',
+          debut: 'Juil 2025',
+          fin: 'Auj.',
+          taches: [
+            { description: 'Installer et configurer Windows sur des produits achetés' },
+            { description: 'Transférer ou récupérer des données client' },
+            { description: 'Diagnostiquer les appareils de la clientèle laissés en magasin' },
+            { description: "Réparer des défauts logiciels/physiques d'ordinateurs et téléphones" },
+            { description: 'Répondre/aider les clients au comptoir ou au téléphone avec leurs appareils personnels',
+              sousTaches: [
+                { description: 'Effectuer des réparations mineurs selon le cas' }
+              ]
+            },
+            { description: "Prendre en charge des réparations majeures et leur envoi au centre de réparation" }
+          ]
+        },
         {
           poste: 'Stagiaire en développement logiciel',
           entreprise: 'Vanderlande',
           lieu: 'Québec',
           debut: 'Jan 2025',
-          fin: 'Auj.',
+          fin: 'Mai 2025',
           taches: [
             { description: 'Développement en continu assurant une qualité du code de niveau professionnel sous plusieurs langages comme TS, Node.js' },
             { description: 'Participation active à la recherche/développement d’une preuve de concept comme étant un module réutilisable dockerisé générant des notifications Push pour une app Web', 
@@ -50,16 +70,7 @@ export class CvService {
           entreprise: 'Best Buy',
           lieu: 'Laurier Québec',
           debut: 'Nov 2024',
-          fin: 'Jan 2025',
-          taches: [
-            { description: 'Installer et configurer Windows sur des produits achetés' },
-            { description: "Réparer des défauts logiciels/physiques d'ordinateurs et téléphones" },
-            { description: 'Répondre/aider les clients au comptoir ou au téléphone avec leurs appareils personnels',
-              sousTaches: [
-                { description: 'Parfois effectuer des réparations mineurs selon le cas' }
-              ]
-            }
-          ]
+          fin: 'Jan 2025'
         },
         {
           poste: 'Annoptateur de données en IA',
@@ -103,7 +114,7 @@ export class CvService {
       ],
       etudes: [
         {
-          poste: "Baccalauréat en génie logiciel (4e session terminée)",
+          poste: "Baccalauréat en génie logiciel (6e session terminée)",
           entreprise: 'Université Laval',
           lieu: 'Québec',
           debut: 'Jan 2023',

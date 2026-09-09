@@ -8,4 +8,5 @@ export interface Project {
     summary: string;
     imagesSrc?: string[];
     tags: Tag[];
+    enable: boolean;
 }
